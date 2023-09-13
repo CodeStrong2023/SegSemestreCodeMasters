@@ -1,4 +1,7 @@
 #lista = Ariel, Liliana, Natalia, osvaldo
+# Colecciones en python
+
+# Las listas es lo que se conoce en otros lenguajes como arreglos o vetores
 
 nombres = ['Naty', 'osvaldo ', 'Lily', 'Ariel']
 print(nombres)
@@ -22,6 +25,11 @@ print(len(nombres)) # le pasamos como parametro la lista
 
 #Agregamos un elemento
 nombres.append('Marcelo')
+nombres.append([1, 2, 3])
+nombres.append(True)
+nombres.append(10.45)
+nombres.append(7)
+print(nombres)
 
 #Insertar un elemento en un indice especifico
 nombres.insert(1,'Alberto')
@@ -149,3 +157,42 @@ print(diccionario)
 # Elimainar un elemento
 diccionario.pop('SABD')
 print(diccionario)
+
+# Eliminar diccionario
+del diccionario  # El diccionario se elimino
+
+# Concatenamos listas
+lista1 = [1, 2, 3]
+lista2 = [4, 5, 6]
+lista3 =lista1 + lista2
+print(lista3)
+
+lista3.extend([7, 8, 9]) #Funcion para agregar varios elementos a una lsita
+print(lista3)
+
+print(lista3.index(5)) #Funcion para ubicar en que indice esta el valor ingresado
+#print(lista3.index(0)) # esto diria un error por no ser el elemento parte de la lista
+
+#Como saber cuantos valores repetidos hay dentro de una lista
+print(lista3.count(1)) #cuanto cuantos valores iguales hay dentro de la lista
+
+# Para poner al reves una lista
+lista3.reverse()
+print(lista3)
+
+#para que una lista se multiplique repitiendo sus elementos
+lista = [1, 2 ,3] * 2
+print(lista)
+
+#metodo de ordenamiento, en python es una funcion
+lista3.sort() #ordena los elementos ascendentemente
+print(lista3)
+lista3.sort(reverse=True) #ordena desendentemente
+print(lista3)
+
+tupla = (4, 'Hola', 6.78, [1, 2, 78], 4, 'Hola')
+print(tupla)
+
+print(4 in tupla) # Accion booleana, su respuesta es de tipo booleano
+# Lo que podemos usar dentro de tuplas son: index, count, len
+# En tuplas se puede convertir de tupla a lista y de lista a tupla

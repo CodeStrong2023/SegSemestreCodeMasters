@@ -137,8 +137,8 @@ print(diccionario)
 for termino in diccionario:
     print(termino)
 
-for termino, valor in diccionario:
-    print(termino, valor)
+#for termino, valor in diccionario:
+#   print(termino, valor)
 
 # Otras maneras de acceder a un diccionario
 for termino in diccionario.keys(): #estamos usando una funcion
@@ -196,3 +196,82 @@ print(tupla)
 print(4 in tupla) # Accion booleana, su respuesta es de tipo booleano
 # Lo que podemos usar dentro de tuplas son: index, count, len
 # En tuplas se puede convertir de tupla a lista y de lista a tupla
+
+# Repaso de set o conjunto
+# para definir un conjunto
+conjunto2 = set()
+conjunto1 = {'bye', }
+conjunto2.add(7)
+conjunto2.add('Hola')
+print(conjunto2)
+conjunto1.add('hola')
+print(conjunto1)
+print(3 not in conjunto1) #preguntamos si el numero 3 esta en el conjuntto1
+
+#Como hacer la igualdad de dos conjuntos
+print(conjunto1 == conjunto2) #nos devuelve como respuesta un booleano
+
+# Operaciones en conjunto
+conjunto3 = conjunto1 | conjunto2 #nos devuelve como respuesta un booleano
+print(conjunto3)
+
+conjunto3 = conjunto1 & conjunto2 #que elemento tienen en comun
+print(conjunto3)
+
+conjunto3 = conjunto1 - conjunto2 # Asigna el valor que esta en el conjunto1 y no en el conjunto2
+print(conjunto3)
+conjunto3 = conjunto2 - conjunto1
+print(conjunto3)
+
+conjunto3 = conjunto1 ^ conjunto2 #elementos que no comparten o que son diferentes entre ambos
+print(conjunto3)
+
+conjunto3 = conjunto1 | conjunto2
+print(conjunto2.issubset(conjunto3)) # Aqui preguntamos si unconjunto es un subconjunto dentro de otro
+print(conjunto1.issubset(conjunto3))
+print(conjunto3.issubset(conjunto1))
+print(conjunto3.issubset(conjunto2))
+
+print(conjunto3.issubset(conjunto1))# Preguntamos si los elementos del conjunto1 estan dentro del 3
+print(conjunto3.issubset(conjunto2))# Si es verdadero quiere decir que el conjunto3 es un superconjunto
+print(conjunto2.issubset(conjunto3))
+
+# como saber si ambos conjuntos son disconexos, esto es si no comparten elementos en comun
+print(conjunto1.isdisjoint(conjunto2)) #No hay cosas en comun
+
+# Convertir un conjunto totalmente en inmutable
+conjunto1 = frozenset #Esto hace que el conjunto sea totalmente inmutable
+# No se puede agregar modificar ni eliminar elementos del conjunto
+
+# Repaso diccionarios
+diccionarioNuevo = {'Azul': 'Blue', 'Red': 'Rojo', 'Verde': 'Green', 'Amarillo': 'yellow'}
+
+# Como eliminar
+del (diccionarioNuevo['Azul'])
+print(diccionarioNuevo)
+
+# Los diccionarios pueden almacenar diferente tipos de datos
+diccionario2 = {'Ariel': {'edad': 40, 'Altura': 1.83}, 'Osvaldo': [45, 1.85], 'Natalia': [35, 1.67]}
+print(diccionario2)
+
+seleccionArgentina = {
+    10: {'Nombre': 'Lionel Messi', 'Edad': 35, 'Altura': 1.70, 'Precio': '50 Millones', 'Posicion': 'Extremo Derecho'},
+    11: {'Nombre': 'Angel Di Maria', 'Edad': 34, 'Altura': 1.80, 'Precio': '12 Millones', 'Posicion': 'Extremo derecho'},
+    24: {'Nombre': 'Paulo Dybala', 'Edad': 28, 'Altura':1.77, 'Precio': '35 Millones', 'Posicion':  'Media punta'},
+    19: {'Nombre': 'Nicolas Otamendi', 'Edad': 34, 'Altura': 1.83, 'Precio': '3.5 Millones', 'Posicion': 'Defensa central'},
+    1: {'Nombre': 'Franco Armani', 'Edad': 35, 'Altura': 1.89, 'Precio': '3.5 Millones', 'Posicion': 'Portero'},
+    8: {'Nombre': 'Marcos Acuña', 'Edad': 31, 'Altura': 1.72, 'Precio': '2 millones', 'Posicion': 'Defensa'},
+    7: {'Nombre': 'Rodrigo De Paul', 'Edad': 29, 'Altura': 1.77, 'Precio': '292 mil ', 'Posicion': 'centrocampista'},
+    26: {'Nombre': 'Nahuel Molina', 'Edad': 25, 'Altura': 1.75, 'Precio': '18 millones ', 'Posicion': 'Defensa'},
+    9: {'Nombre': 'Julian Álvarez', 'Edad': 23, 'Altura': 1.70, 'Precio': '32 millones ', 'Posicion': 'Delantero'}
+
+}
+for llave, valor in seleccionArgentina.items():
+    print(llave, valor)
+
+# Como tarea agregar por lo menos 4 jugadores mas al diccionario seleccionArgentina
+print('Tenemos cargado en el diccionario la cantidad de jugadores: ', end=' ')
+print(len(seleccionArgentina))
+
+
+

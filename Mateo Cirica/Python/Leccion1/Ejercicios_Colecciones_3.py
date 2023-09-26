@@ -21,4 +21,10 @@ P = {"Nombre": "Gandalf", "Clase": "Mago", "Raza": "Istar"}
 personajes.append(P)
 P = {"Nombre": "Legolas", "Clase": "Arquero", "Raza": "Elfo Sindar"}
 personajes.append(P)
+P = {"Nombre": "Sauron", "Clase": "Alta Jerarquia", "Raza": "Ainur y Maiar"}
+personajes.append(P)
+P = {"Nombre": "Galadriel", "Clase": "Cogobernante", "Raza": "Noldor"}
+personajes.append(P)
+P = {"Nombre": "Elrond", "Clase": "Señor de Rivendel", "Raza": "Peredhil"}
+personajes.append(P)
 print(personajes)

@@ -13,10 +13,10 @@ public class Ciclos02 {
         var numero = Integer.parseInt(JOptionPane.showInputDialog("DIgite un numero: "));
         while(numero != 0) {
             if(numero > 0){
-             JOptionPane.showMessageDialog(null, "El numero "+numero+ "es Positivo");   
+             JOptionPane.showMessageDialog(null, "El numero "+numero+ " es Positivo");   
             }
             else{
-                JOptionPane.showMessageDialog(null, "El numero "+numero+ "es Negativo");
+                JOptionPane.showMessageDialog(null, "El numero "+numero+ " es Negativo");
             }
             
             numero = Integer.parseInt(JOptionPane.showInputDialog("DIgite otro numero: "));

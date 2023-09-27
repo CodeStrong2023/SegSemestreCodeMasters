@@ -1,6 +1,4 @@
-/*
 
- */
 package Operaciones;
 
 public class Aritmetica {
@@ -8,7 +6,19 @@ public class Aritmetica {
     int a;
     int b;
     
-    //Metodos
+    //El constructor es un metodo especial 
+    public Aritmetica(){//Constructor 1 vacio
+        System.out.println("Se esta ejecutando este constructor numero uno");
+    }
+    
+    public Aritmetica(int a, int b){//Constructor 2
+        this.a = a;
+        this .b = b;
+        System.out.println("Se esta ejecutando este constructor numero dos");
+    }
+    
+            
+    //Metodo
     public void sumarNumeros(){
         int resultado = a + b;
         System.out.println("resultado = "+resultado);

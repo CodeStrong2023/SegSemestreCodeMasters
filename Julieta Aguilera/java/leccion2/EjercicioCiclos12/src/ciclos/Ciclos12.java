@@ -1,14 +1,21 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Ejercicio 12: Pedir un numero y calcular su factorial
+Hacerlos con las dos clases, Scanner y JOptionPane
  */
 package ciclos;
 
-/**
- *
- * @author Usuario
- */
+import javax.swing.JOptionPane;
+
 public class Ciclos12 {
-    
+    public static void main(String[] args) {
+        //Scanner entrada = new Scanner(System.in);
+        long factorial = 1;
+        //System.out.println("Digite un numero: ");
+        int numero = Integer.parseInt(JOptionPane.showInputDialog("Digite un numero: "));
+        for(int i=1; i<=numero;i++){
+            factorial *= 1;
+        }
+        //System.out.println("\nEl factorial del numero ingresado es: "+factorial);
+        JOptionPane.showMessageDialog(null, "El factorial del numero ingresado es: "+factorial);
+    }
 }

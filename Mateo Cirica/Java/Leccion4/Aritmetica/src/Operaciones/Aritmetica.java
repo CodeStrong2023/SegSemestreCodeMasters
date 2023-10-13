@@ -6,6 +6,16 @@ public class Aritmetica {
     int a;
     int b;
 
+    //El constructor es un metodo especial
+    public Aritmetica(){ //Constructor 1
+        System.out.println("Se esta ejecutando este contructor numero uno");
+    }
+
+    public Aritmetica(int a, int b){
+        this.a = a;
+        this.b = b;
+        System.out.println("Se esta ejecutando este constructor numero dos");
+    }
     //Metodo
     public void sumarNumeros() {
         int resultado = a + b;
@@ -17,9 +27,9 @@ public class Aritmetica {
         return a + b;
     }
 
-    public int sumarConArgumentos(int arg1, int arg2){
-        this.a = arg1; //El argumento a se asigna al atributo this.a
-        this.b = arg2;
+    public int sumarConArgumentos(int a, int b){
+        this.a = a; //El argumento a se asigna al atributo this.a
+        this.b = b;
         // return a + b;
         return this.sumaConRetorno();
     }

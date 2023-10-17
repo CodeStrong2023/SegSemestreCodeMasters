@@ -6,6 +6,76 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ejercicios10",
+            "request": "launch",
+            "mainClass": "Ciclos10.Ejercicios10",
+            "projectName": "SegSemestreCodeMasters_f00860b5"
+        },
+        {
+            "type": "java",
+            "name": "Ciclos10",
+            "request": "launch",
+            "mainClass": "Ciclos10.Ciclos10",
+            "projectName": "SegSemestreCodeMasters_f00860b5"
+        },
+        {
+            "type": "java",
+            "name": "PasoPorReferencia",
+            "request": "launch",
+            "mainClass": "PasoPorReferencia.PasoPorReferencia",
+            "projectName": "SegSemestreCodeMasters_f00860b5"
+        },
+        {
+            "type": "java",
+            "name": "ProyectoCaja",
+            "request": "launch",
+            "mainClass": "Caja.ProyectoCaja",
+            "projectName": "SegSemestreCodeMasters_f00860b5"
+        },
+        {
+            "type": "java",
+            "name": "Tateti",
+            "request": "launch",
+            "mainClass": "Tateti.Tateti",
+            "projectName": "SegSemestreCodeMasters_f00860b5"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicios09",
+            "request": "launch",
+            "mainClass": "Ciclos09.Ejercicios09",
+            "projectName": "SegSemestreCodeMasters_f00860b5"
+        },
+        {
+            "type": "java",
+            "name": "Ciclos09",
+            "request": "launch",
+            "mainClass": "Ciclos09.Ciclos09",
+            "projectName": "SegSemestreCodeMasters_f00860b5"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicios08",
+            "request": "launch",
+            "mainClass": "Ciclos08.Ejercicios08",
+            "projectName": "SegSemestreCodeMasters_f00860b5"
+        },
+        {
+            "type": "java",
+            "name": "Ciclos08",
+            "request": "launch",
+            "mainClass": "Ciclos08.Ciclos08",
+            "projectName": "SegSemestreCodeMasters_f00860b5"
+        },
+        {
+            "type": "java",
+            "name": "PruebaAritmetica",
+            "request": "launch",
+            "mainClass": "Operaciones.PruebaAritmetica",
+            "projectName": "SegSemestreCodeMasters_f00860b5"
+        },
+        {
+            "type": "java",
             "name": "Ejercicio07",
             "request": "launch",
             "mainClass": "Ciclos07.Ejercicio07",

@@ -66,8 +66,38 @@ print(f"Resultado de la suma es: {resultado}")
 print(f"Resultado de la suma es : {sumar2(22, 66)}")
 
 # Argumentos, variables en funciones
-def lista_nombres(*nombres): #Normalmente se utiliza: *args
+def listar_nombres(*nombres): #Normalmente se utiliza: *args
     for nombre in nombres: # se va a convertir en una tupla
         print(nombre)
-lista_nombres("Lucas", "José", "Claudia", "Rosa", "Maria")
-lista_nombres("Marcos", "Daniel", "Romina", "Fernando", "Marcela", "Carlos")
+listar_nombres("Lucas", "José", "Claudia", "Rosa", "Maria")
+listar_nombres("Marcos", "Daniel", "Romina", "Fernando", "Marcela", "Carlos")
+
+# Definir una función manejar una lista de terminos
+def listar_terminos(**terminos):# Lo mas utilizado es **kwargs para recibir un arumento
+    for llave, valor in terminos.items():
+        print(f"{llave} : {valor}")
+listar_terminos()# no recibe nada, nada para mostrar
+listar_terminos(IDE="Integrated Develoment Enviromen", PK='Primaruy Key')
+listar_terminos(Nombre="Leonel Messi")
+
+def desplegar_nombres(nombres):
+    for nombre in nombres:
+        print(nombre)
+
+nombre2 = ["Tito","Pedro","Carlos"]
+desplegar_nombres(nombre2)
+desplegar_nombres("Carla")
+#desplegar_nombres(10) #No es un objeto iterables
+desplegar_nombres((10, 12))# La convertimos en una tupla
+desplegar_nombres([23, 55])# la convertimos en una lista
+
+# Funciones Recursiva, necesita una caso de base y una caso recursiva
+def factorial(numero):
+    if numero == 1: # Caso base
+        return 1
+    else:
+        return numero * factorial(numero-1)# Caso Recursivo
+numero_factorial = int(input("digite un número para calcular el factorial: "))
+resultado = factorial(numero_factorial) #Lo hacemos en código duro
+print(f"El factorial del número {numero_factorial} es : {resultado}")
+

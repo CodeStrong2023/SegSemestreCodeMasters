@@ -1,4 +1,4 @@
 var nombre = "Julieta";
+nombre = "Erica \nJulieta\n"
 var apellido = "Aguilera";
-console.log(nombre);
-console.log(apellido);
+console.log(nombre+apellido); //Erica Julieta Aguilera

@@ -21,3 +21,13 @@ var objeto = {
 console.log(typeof objeto);
 
 //Tipo de dato boolean
+var bandera = true;
+console.log(bandera);
+
+//Tipo de dato funcion
+function miFuncion(){}
+console.log(typeof miFuncion);
+
+//Tipo de dato symbol
+var simbolo = Symbol("Mi simbolo");
+console.log(typeof simbolo);

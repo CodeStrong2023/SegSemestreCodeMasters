@@ -13,5 +13,15 @@ if(edad >= adulto){
     console.log("Eres mayor de edad");
 }
 else{
-    console.log("Eres menor de edad")
+    console.log("Eres menor de edad");
+}
+
+//Dentro de unrango
+let dentroRnago = 5; //Aqui vamos a ir cambiando el valor
+let valMin = 0, valMax = 10;
+if (dentroRnago >= valMax && dentroRnago <= valMax){
+    console.log('Está dentro del rango establecido');
+} 
+else {
+    console.log('Esta fuera del rango establecido');
 }

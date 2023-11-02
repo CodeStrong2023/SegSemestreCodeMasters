@@ -3,10 +3,11 @@ package domain;
 
 public class Persona {
     //Atributos de herencia
-    private String nombre;
-    private char genero;
-    private int edad;
-    private String direccion;
+    protected String nombre = "Julieta";
+    protected char genero;
+    protected int edad;
+    protected String direccion;
+    private String apellido = "Aguilera";
     
     //Constructor vacio: este es para crear objetivos sin necesidad de inizializar
     //los atributos de la clase 
@@ -26,7 +27,7 @@ public class Persona {
     }
 
     public String getDireccion() {
-        return direccion;
+        return this.direccion;
     }
 
     public void setDireccion(String direccion) {
@@ -34,15 +35,19 @@ public class Persona {
     }
 
     public String getNombre() {
-        return nombre;
+        return this.nombre;
     }
-
+    
+    public String getApellido() {
+        return this.apellido;
+    }
+    
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
     public char getGenero() {
-        return genero;
+        return this.genero;
     }
 
     public void setGenero(char genero) {
@@ -50,16 +55,24 @@ public class Persona {
     }
 
     public int getEdad() {
-        return edad;
+        return this.edad;
     }
 
     public void setEdad(int edad) {
         this.edad = edad;
-    }
+    }   
 
-    
-    
-    
-    
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Persona{nombre=").append(nombre);
+        sb.append(", genero=").append(genero);
+        sb.append(", edad=").append(edad);
+        sb.append(", direccion=").append(direccion);
+        sb.append(", apellido=").append(apellido);
+        sb.append(", ").append(super.toString());
+        sb.append('}');
+        return sb.toString();
+    }
     
 }

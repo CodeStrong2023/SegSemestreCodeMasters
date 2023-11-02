@@ -1,25 +1,24 @@
 
 package domain;
 
+
 public class Persona {
-    //Atributos de herencia
-    protected String nombre = "Julieta";
+    protected String nombre;
     protected char genero;
     protected int edad;
     protected String direccion;
-    private String apellido = "Aguilera";
     
-    //Constructor vacio: este es para crear objetivos sin necesidad de inizializar
-    //los atributos de la clase 
-    public Persona(){ //constructor 1
+    //Constructor vacio: este es para crear objetos sin necesidad de 
+    // inicializar los atributos de la clase
+    public Persona(){//Constructor 1
         
     }
     
-    public Persona (String nombre){ //constructor 2
+    public Persona(String nombre){//constructor 2
         this.nombre = nombre;
     }
 
-    public Persona(String nombre, char genero, int edad, String direccion) {//Constructor 3
+    public Persona(String nombre, char genero, int edad, String direccion) {
         this.nombre = nombre;
         this.genero = genero;
         this.edad = edad;
@@ -37,11 +36,7 @@ public class Persona {
     public String getNombre() {
         return this.nombre;
     }
-    
-    public String getApellido() {
-        return this.apellido;
-    }
-    
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -60,19 +55,24 @@ public class Persona {
 
     public void setEdad(int edad) {
         this.edad = edad;
-    }   
+    }
 
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Persona{nombre=").append(nombre);
+        sb.append("Persona{");
+        sb.append("nombre=").append(nombre);
         sb.append(", genero=").append(genero);
         sb.append(", edad=").append(edad);
         sb.append(", direccion=").append(direccion);
-        sb.append(", apellido=").append(apellido);
         sb.append(", ").append(super.toString());
         sb.append('}');
         return sb.toString();
     }
+
+
+    
+    
+    
     
 }

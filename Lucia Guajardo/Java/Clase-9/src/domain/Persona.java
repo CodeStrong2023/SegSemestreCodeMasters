@@ -1,13 +1,12 @@
-
 package domain;
 
 public class Persona {
     //Atributos de herencia
-    protected String nombre = "Julieta";
+    protected String nombre = "Lucia";
     protected char genero;
     protected int edad;
     protected String direccion;
-    private String apellido = "Aguilera";
+    private String apellido = "Guajardo";
     
     //Constructor vacio: este es para crear objetivos sin necesidad de inizializar
     //los atributos de la clase 

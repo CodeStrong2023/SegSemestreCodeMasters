@@ -26,6 +26,7 @@ public class ProyectoFinal {
             System.out.println(" (5) Opción 5: Memoria");
             System.out.print("Selecciona un número del 1 al 5 para jugar los siguientes juegos: ");
             int opc = input.nextInt();
+            System.out.println(" ");
 
             switch (opc) {
                 case 1:

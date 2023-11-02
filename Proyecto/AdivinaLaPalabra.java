@@ -10,8 +10,8 @@ public class AdivinaLaPalabra {
     String palabra, palabra2, pista;
     
     System.out.println("Bienvenido a Adivina la palabra"); 
-    System.out.println("Aclaracion: La palabra que elijas debes escribirla con la inicial en mayÃºscula y con su respectivo tilde si lo requiere.");
-    System.out.println("Ingrese la palabra que el otro usuario adivine: ");
+    System.out.println("Aclaracion: La palabra que elijas debes escribirla con la inicial en mayúscula y con su respectivo tilde si lo requiere.");
+    System.out.println("Ingrese la palabra que el otro usuario adivinará: ");
     palabra = s.nextLine();
     System.out.println("Ingrese la pista: ");
     pista = s.nextLine();

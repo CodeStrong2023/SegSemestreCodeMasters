@@ -8,7 +8,6 @@ public class AdivinaLaPalabra {
     Scanner scanner = new Scanner(System.in);
     
     String palabra, palabra2, pista;
-    
     System.out.println("Bienvenido a Adivina la palabra"); 
     System.out.println("Aclaracion: La palabra que elijas debes escribirla con la inicial en mayúscula y con su respectivo tilde si lo requiere.");
     System.out.println("Ingrese la palabra que el otro usuario adivinará: ");

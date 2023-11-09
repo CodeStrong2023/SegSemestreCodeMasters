@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "tateti",
+            "request": "launch",
+            "mainClass": "Tateti.tateti",
+            "projectName": "SegSemestreCodeMasters_f00860b5"
+        },
+        {
+            "type": "java",
+            "name": "ProyectoFinal",
+            "request": "launch",
+            "mainClass": "ProyectoFinal.ProyectoFinal",
+            "projectName": "SegSemestreCodeMasters_f00860b5"
+        },
+        {
+            "type": "java",
             "name": "Ejercicios12",
             "request": "launch",
             "mainClass": "Ciclos12.Ejercicios12",

@@ -4,6 +4,7 @@ package test;
 import domain.ClaseEjemplo;
 import domain.Cliente;
 import domain.Empleado;
+import domain.Persona;
 import java.util.Date;
 
 public class TestHerencia {
@@ -13,8 +14,12 @@ public class TestHerencia {
         ClaseEjemplo claseEjemplo = new ClaseEjemplo();
         System.out.println("Nombre y Apellido: " + claseEjemplo.getNameAndLastName());
         
-        Cliente cliente = new Cliente(new Date(), true, "Rosi", 'F', 22, "Villa Atuel");
-        System.out.println("cliente = " + cliente);
+//        Date fecha1 = new Date();
+//        
+//        Cliente cliente = new Cliente(fecha1, true, "Rosi", 'F', 22, "Villa Atuel");
+//        System.out.println("cliente = " + cliente);
+//        
+//        Persona persona1 = new Persona();
     }
     
 }

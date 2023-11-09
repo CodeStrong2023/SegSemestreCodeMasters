@@ -25,5 +25,13 @@ public class Testfinal {
         //miDni = 45142385; No se puede modificar
         //Persona.CONSTANTE_AQUI = 9; No se modiica 
         System.out.println("Mi atributo es:" +Persona.CONSTANTE_AQUI);
+        
+        final Persona persona1 = new Persona();
+        //persona1 = new Persona(); No se puede asignar una nueva referencia
+        persona1.setNombre("Julieta Aguilera");
+        System.out.println("persona1 nombre: "+ persona1.getNombre());
+        persona1.setNombre("Rosi");
+        System.out.println("persona1 nombre: "+persona1.getNombre());
+        
     }
 }

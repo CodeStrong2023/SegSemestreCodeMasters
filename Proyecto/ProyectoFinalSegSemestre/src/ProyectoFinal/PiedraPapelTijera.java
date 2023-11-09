@@ -8,7 +8,7 @@ import java.util.Scanner;
 public  class PiedraPapelTijera {
 
     public static void main(String[] args) {
-        try (Scanner entrada = new Scanner(System.in)) {
+            Scanner entrada = new Scanner(System.in);
             Random random = new Random();
             int jugador, computadora, resultadoJugador = 0, resultadoComputadora = 0;
             System.out.println("Bienvenidos al Juego de Piedra, Papel y Tijera");
@@ -66,8 +66,6 @@ public  class PiedraPapelTijera {
             } else {
                 System.out.println("El juego termina en empate.");
             }
-            // Cerrar el escáner
-        }
     }
 
     // Función para obtener la opción seleccionada como cadena

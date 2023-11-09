@@ -1,9 +1,8 @@
-package ProyectoFinal;
-
+package Tateti;
 
 import java.util.Scanner;
 
-public class Tateti {
+public class tateti {
     private static char[][] tablero = new char[3][3];
     private static char jugadorActual = 'X';
 
@@ -57,7 +56,7 @@ public class Tateti {
 
     private static int[] obtenerMovimientoJugador() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Jugador " + jugadorActual + ", ingresa tu movimiento (fila y columna del 0 al 2): ");
+        System.out.println("Jugador " + jugadorActual + ", ingresa tu movimiento (fila y columna): ");
         int fila = scanner.nextInt();
         int columna = scanner.nextInt();
         return new int[]{fila, columna};

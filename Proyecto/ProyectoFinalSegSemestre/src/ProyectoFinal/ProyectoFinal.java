@@ -47,6 +47,9 @@ public class ProyectoFinal {
             }
             System.out.println();
             input.nextLine(); // Limpiar el búfer de entrada después de la respuesta
+             for (int i = 0; i < 50; i++) {
+                System.out.println();
+            }
 
         } while (respuesta.equalsIgnoreCase("si")); // Continúa si la respuesta es "si"
 

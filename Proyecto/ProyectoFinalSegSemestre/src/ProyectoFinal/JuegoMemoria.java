@@ -7,6 +7,10 @@ public class JuegoMemoria {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
+        Random generadorAleatorio = new Random();
+        int[] numeros_al_azar = new int[5];
+        int puntaje = 0;
+        
         System.out.println("***********************************");
         System.out.println("¡Bienvenido al juego de memoria!");
         System.out.println("***********************************");
@@ -17,11 +21,6 @@ public class JuegoMemoria {
         System.out.println();
         System.out.println("¡Buena suerte, espero que lo disfrutes :D!");
         System.out.println();
-
-        int[] numeros_al_azar = new int[5];
-        int puntaje = 0;
-
-        Random generadorAleatorio = new Random();
 
         for (int i = 0; i < 5; i++) {
             int numeroAleatorio = generadorAleatorio.nextInt(100); // Genera un número aleatorio entre 0 y 99

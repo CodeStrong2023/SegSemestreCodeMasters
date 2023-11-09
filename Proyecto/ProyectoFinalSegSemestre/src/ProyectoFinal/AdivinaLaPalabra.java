@@ -16,7 +16,9 @@ public class AdivinaLaPalabra {
         System.out.println("Ingrese la pista: ");
         pista = entrada.nextLine();
 
-        System.out.println("\n\n\n\n\n\n\n");
+         for (int i = 0; i < 50; i++) {
+                System.out.println();
+            }
         System.out.println("La pista es: " + pista);
 
         System.out.println("A continuación ingrese la palabra: ");

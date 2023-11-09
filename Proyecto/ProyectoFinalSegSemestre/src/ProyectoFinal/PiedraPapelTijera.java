@@ -1,25 +1,21 @@
+
+
 package ProyectoFinal;
 
 
 import java.util.Random;
 import java.util.Scanner;
 
-
 public  class PiedraPapelTijera {
 
     public static void main(String[] args) {
-        //Creamos una clase Scanner para ingresar los datos por teclado
-        try (Scanner entrada = new Scanner(System.in)) {
-            // Random para generar un número entero aleatorio entre ciertos límites 
+            Scanner entrada = new Scanner(System.in);
             Random random = new Random();
-            // Creamos nuestras variables enteras
             int jugador, computadora, resultadoJugador = 0, resultadoComputadora = 0;
-            // Imprimimos el inicio del juego
             System.out.println("Bienvenidos al Juego de Piedra, Papel y Tijera");
             System.out.println(" ");
-            // Para el desarrollo del juego utilizamos un Ciclo for para las 3 rondas
+            // Ciclo para 3 rondas
             for (int ronda = 1; ronda <= 3; ronda++) {
-                // Imprimimos la primer ronda  y las opciones que debe elegir el jugador
                 System.out.println("\nRonda " + ronda);
                 System.out.println("Elije una opción:");
                 System.out.println(" ");
@@ -31,7 +27,7 @@ public  class PiedraPapelTijera {
                 jugador = Integer.parseInt(entrada.nextLine());
                 System.out.println("");
                 
-                // Mostramos la elección del jugador con un ciclo if e imprimimos 
+                // Mostrar la elección del jugador
                 if (jugador >= 1 && jugador <= 3) {
                     System.out.println("Elegiste " + jugador);
                     System.out.println("Jugador elige: " + getOpcion(jugador));
@@ -40,7 +36,7 @@ public  class PiedraPapelTijera {
                     continue; // Volver al inicio del ciclo si la opción es inválida
                 }
                 
-                // Generamos la elección aleatoria de la computadora e imprimimos
+                // Generar la elección aleatoria de la computadora
                 computadora = random.nextInt(3) + 1;
                 System.out.println("Computadora elige: " + getOpcion(computadora));
                 
@@ -71,9 +67,6 @@ public  class PiedraPapelTijera {
             } else {
                 System.out.println("El juego termina en empate.");
             }
-            System.out.println("¡¡¡FIN DEL JUEGO!!!");
-            // Cerrar el escáner
-        }
     }
 
     // Función para obtener la opción seleccionada como cadena

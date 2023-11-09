@@ -61,8 +61,6 @@ public class ProyectoFinal {
         System.out.println("Castro Luciana");
         System.out.println("Cirica Mateo");
         System.out.println("Guajardo Lucia");
-        System.out.println("Houlne Alejo");
-        System.out.println("Mercatante Augusto");
         System.out.println("Rodriguez Maricel Romina");
     }
 }

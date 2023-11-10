@@ -13,6 +13,10 @@ public class Ahorcado {
         // Solicitar la palabra secreta al usuario
         System.out.println("Ingresa la palabra secreta:");
         secreta = scanner.nextLine();
+        
+         for (int i = 0; i < 50; i++) {
+                System.out.println();
+            }
 
         // Obtener la longitud de la palabra secreta
         n = secreta.length();

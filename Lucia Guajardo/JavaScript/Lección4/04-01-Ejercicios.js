@@ -71,12 +71,12 @@ este forma parte del ambito global
 Un error es que se sobreescribe
  */
 
-var nombre = 'Julieta';
-nombre = 'Erica';
+var nombre = 'Lucia';
+nombre = 'Antonella';
 console.log(nombre);
 
 function saludar(){
-    var nombre3 = 'Rosalia';
+    var nombre3 = 'Sabrina';
     console.log(nombre3); //Aqui no lee el dato en la funcion
 }
 //console.log(nombre);
@@ -95,7 +95,7 @@ o dentro de una funcion
 */
 
 function saludar2(){
-    let nombre2 = 'Julieta';
+    let nombre2 = 'Lucia';
     console.log(nombre2);
 }
 //console.log(nombre2);
@@ -110,7 +110,110 @@ console.log(edad);
 const se utiliza para valores constantes que no pueden ser reasignados 
 */
 
-const fechaNacimiento = 2006;
+const fechaNacimiento = 2001;
 console.log(fechaNacimiento);
 //fechaNacimiento = 2003;
 //console.log(fechaNacimiento); //solo se ejecuta el console anterior 
+
+//Evitar repetir tu código
+
+
+let days = 1;
+
+switch (days) {
+    case 1:
+        console.log('Hoy es Lunes');
+        break;
+    case 2:
+        console.log('Hoy es Martes');
+        break;
+    case 3:
+        console.log('Hoy es Miércoles');
+        break;
+    case 4:
+        console.log('Hoy es Jueves');
+        break;
+    case 5:
+        console.log('Hoy es Viernes');
+        break;
+    case 6:
+        console.log('Hoy es Sábado');
+        break;
+    case 7:
+        console.log('Hoy es Domingo');
+        break;
+    default:
+        console.log('Error en el ingreso de día de la semana.')
+        break;
+}
+
+//Opción mejorada
+
+let days2 =['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
+
+function getDay(n){
+    if(n < 1 || n > 7){
+        throw new Error('out of range');
+    }
+    return days2[n-1];
+}
+console.log(getDay(5));
+
+//Hacer un ejercicio similar al que esta hecho, pero ahora con los meses del año, debes
+//hacerlo con la estructura switch y luego con la funcipon en la opción mejorada
+
+let months = 1;
+
+switch (months) {
+    case 1:
+        console.log('Es Enero');
+        break;
+    case 2:
+        console.log('Es Febrero');
+        break;
+    case 3:
+        console.log('Es Marzo');
+        break;
+    case 4:
+        console.log('Es Abril');
+        break;
+    case 5:
+        console.log('Es Mayo');
+        break;
+    case 6:
+        console.log('Es Junio');
+        break;
+    case 7:
+        console.log('Es Julio');
+        break;
+    case 8:
+        console.log('Es Agosto');
+        break;
+    case 9:
+        console.log('Es Septiembre');
+        break;
+    case 10:
+        console.log('Es Octubre');
+        break;
+    case 11:
+        console.log('Es Noviembre');
+        break;
+    case 12:
+        console.log('Es Diciembre');
+        break;
+    default:
+        console.log('Error en el ingreso de mes del año.')
+        break;
+}
+
+//Opción mejorada
+
+let months2 =['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+
+function getMonth(n){
+    if(n < 1 || n > 7){
+        throw new Error('out of range');
+    }
+    return months2[n-1];
+}
+console.log(getMonth(5));

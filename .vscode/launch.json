@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "tateti",
+            "request": "launch",
+            "mainClass": "Tateti.tateti",
+            "projectName": "SegSemestreCodeMasters_f00860b5"
+        },
+        {
+            "type": "java",
+            "name": "ProyectoFinal",
+            "request": "launch",
+            "mainClass": "ProyectoFinal.ProyectoFinal",
+            "projectName": "SegSemestreCodeMasters_f00860b5"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicios12",
+            "request": "launch",
+            "mainClass": "Ciclos12.Ejercicios12",
+            "projectName": "SegSemestreCodeMasters_f00860b5"
+        },
+        {
+            "type": "java",
+            "name": "Ciclos12",
+            "request": "launch",
+            "mainClass": "Ciclos12.Ciclos12",
+            "projectName": "SegSemestreCodeMasters_f00860b5"
+        },
+        {
+            "type": "java",
+            "name": "Ciclos11",
+            "request": "launch",
+            "mainClass": "Ciclos11.Ciclos11",
+            "projectName": "SegSemestreCodeMasters_f00860b5"
+        },
+        {
+            "type": "java",
             "name": "Ejercicios10",
             "request": "launch",
             "mainClass": "Ciclos10.Ejercicios10",

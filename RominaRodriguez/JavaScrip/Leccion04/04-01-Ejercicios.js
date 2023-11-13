@@ -81,3 +81,105 @@ switch(mes){ //No solo se puede utilizar números, también cadenas
 }
 console.log("Bienveidos a la estación de: "+estacion)
 
+/*
+conts se utiliza para valores constantes que no pueden ser reasignados
+ */
+
+const fechaDeNacimiento = 2006;
+console.log(fechaDeNacimiento);
+//fechasDeNacimiento = 2003;
+//console.log(fechaDeNacimiento);//solo se ejecuta el console anterior
+
+//Evitar repetir tu código
+//dry don't repeat yourself
+
+let days = 7;
+switch (days){
+    case 1:
+        console.log('Hoy es Lunes');
+        break;
+    case 2:
+        console.log('Hoy es Martes');
+        break;
+    case 3:
+        console.log('Hoy es Miércoles');
+        break;
+    case 4:
+        console.log('Hoy es Jueves');
+        break;
+    case 5:
+        console.log('Hoy es Viernes');
+        break;
+    case 6:
+        console.log('Hoy es Sabado');
+        break;
+    case 7:
+        console.log('Hoy es Domingo');
+        break;
+    default:
+        break;   
+}
+//Esta es la versión mejorada, para no repetir código
+let days2 = ['Lunes','Martes','Miércoles','Jueves','Viernes','Sabado','Domingo'];
+function getDay(n){
+    if(n < 1 || n >7){
+        throw new Error('out of range');
+    }
+    return days2[n-1];
+}
+console.log(getDay(4));
+
+//Hacer un ejercicio similar al que esta hecho, pero ahora
+//con los meses del año, debes hacerlo con la estructura switch y 
+//luego con la función en la opción mejorada
+
+let week = 7;
+switch (week){
+    case 1:
+        console.log('Estamos en el mes de Enero');
+        break;
+    case 2:
+        console.log('Estamos en el mes de Febrero');
+        break;
+    case 3:
+        console.log('Estamos en el mes de Marzo');
+        break;
+    case 4:
+        console.log('Estamos en el mes de Abril');
+        break;
+    case 5:
+        console.log('Estamos en el mes de Mayo');
+        break;
+    case 6:
+        console.log('Estamos en el mes de Junio');
+        break;
+    case 7:
+        console.log('Estamos en el mes de Julio');
+        break;
+    case 8:
+        console.log('Estamos en el mes de Agosto');
+        break;
+    case 9:
+        console.log('Estamos en el mes de Septiembre');
+        break;
+    case 10:
+        console.log('Estamos en el mes de Octubre');
+        break;
+    case 11:
+        console.log('Estamos en el mes de Noviembre');
+        break;
+    case 12:
+        console.log('Estamos en el mes de Diciembre');
+        break                 
+    default:
+        break;   
+}
+//Versión mejorada es:
+let week2 = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+function getWeek2(n){
+    if(n < 1 || n >12){
+        throw new Error('out of range');
+    }
+    return week2[n-1];
+}
+console.log(getWeek2(4));

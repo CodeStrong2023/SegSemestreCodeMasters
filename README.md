@@ -1,5 +1,5 @@
-# SegSemestreCodeMasters
-Repositorio segundo semestre grupo CodeMasters cohorte 2023 UTN FRSR
+# TerSemestreCodeMasters
+Repositorio tercer semestre grupo CodeMasters cohorte 2023 UTN FRSR
 
 Integrantes del grupo:
 
